@@ -30,12 +30,13 @@ body {
 .logo {
 	margin-top: 8px;
 }
-.menu li {
+.menu>li {
 	width: 25%;
 	float: left;
 	border-left: 1px solid #2c71b8;
+	position: relative;
 }
-.menu li:last-child {
+.menu>li:last-child {
 	border-right: 1px solid #2c71b8;
 }
 .menu a {
@@ -96,18 +97,65 @@ input[type="image"] {
 .cart {
 	margin-top: 5px;
 	margin-left: 30px;
-
-}
-.cart a {
-	display: block;
 	width: 40px;
 	height: 40px;
 	background-color: white;
+	background-image: url(images/cart1.png);
+	background-repeat: no-repeat;
+	background-position: 10px 10px;
+	position: relative;
 }
-.cart img {
-	margin-left: 10px;
-	margin-top: 10px;
+.num--of-items {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	background-color: #2c71b8;
+	color: white;
+	font-size: 12px;
+	border-radius: 100%;
+	text-align: center;
 }
+
+
+
+/***********SUBMENU*************/
+
+.menu li:hover ul {
+	visibility: visible;
+}
+
+.menu ul {
+	width: 286px;
+	position: absolute;
+	left: -1px;
+	background-color: #2c71b8;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	visibility: hidden;
+}
+
+.menu ul li a {
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 30px;
+	background-color: #2c71b8;
+	color: white;
+	text-align: left;
+}
+.menu ul li a:hover {
+	background-color: white;
+	color: #2c71b8;
+}
+.menu li:hover a {
+	background-color: #2c71b8;
+	color: white;
+}
+
+
 
 
 
