@@ -164,12 +164,54 @@ input[type="image"] {
 	border-top: 1px solid white;
 	border-bottom: 1px solid white; 
 }
+.sidebar_block {
+	padding: 30px;
+}
 
 .col-md-270px {
 	width: 270px;
 	height: 845px;
 	border-right: 1px solid white;
+	background-color: rgba(255,255,255,0.20);
 }
+
+.col-md-270px p {
+	color: white;
+	font-size: 21px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.opt_add {
+	color: white;
+	font-size: 21px;
+	font-weight: 300;
+	text-align: center;
+	padding-bottom: 20px;
+
+}
+input[type="checkbox"] {
+	display: none;
+}
+label {
+	display: block;
+	margin-top: 20px;
+	color: white;
+	font-size: 21px;
+	font-weight: 300;
+}
+label:before {
+	content: "";
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border: 1px solid white;
+	margin-right: 10px;
+	margin-bottom: 2px;
+}
+input[type="checkbox"]:checked + label:before {
+	background-color: white;
+}
+
 .col-md-900px {
 	width: 900px;
 }
