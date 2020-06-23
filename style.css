@@ -187,6 +187,17 @@ input[type="image"] {
 	font-weight: 300;
 	text-align: center;
 	padding-bottom: 20px;
+}
+input[type="checkbox"] {
+	display: none;
+}
+label {
+	display: block;
+	margin-top: 20px;
+	color: white;
+	font-size: 21px;
+	font-weight: 300;
+}
 
 }
 input[type="checkbox"] {
@@ -199,6 +210,7 @@ label {
 	font-size: 21px;
 	font-weight: 300;
 }
+
 label:before {
 	content: "";
 	display: inline-block;
