@@ -276,7 +276,10 @@ input[type="checkbox"]:checked + label:before {
 	background-color: rgba(255,255,255,0);
 	border: none;
 }
-
+button:focus {
+	outline: none;
+	-webkit-appearance: none;
+}
 .favourite button {
 	width: 30px;
 	height: 30px;
@@ -289,7 +292,12 @@ input[type="checkbox"]:checked + label:before {
 	background-image: url(images/target-white.png);
 }
 
-.favourite:hover {
+.favourite_white/*:hover*/ {
+	position: absolute;
+	top: 50px;
+	right: 10px;
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
 	background-color: #2c71b8;
 	background-image: url(images/heart-white.png);
 }
